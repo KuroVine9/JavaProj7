@@ -4,8 +4,6 @@
 
 ## 과제 파일 구조
 
-The workspace contains two folders by default, where:
-
 - `과제 7.1`: `src/javaproj7_1`의 파일 4개
 - `과제 7.2`: `src/javaproj7_2`의 파일 5개
 - `과제 7.3`: `src/javaproj7_3`의 파일 2개 + `javaproj7_2`에서 상속된 `Circle.java`, `Rectangle.java`, `Shape.java`
