@@ -1,18 +1,11 @@
-## Getting Started
+## 2022-10-12 JAVA프로그래밍 과제7
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+과제 제출용 업로드입니다.
 
-## Folder Structure
+## 과제 파일 구조
 
 The workspace contains two folders by default, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- `과제 7.1`: `src/javaproj7_1`의 파일 4개
+- `과제 7.2`: `src/javaproj7_2`의 파일 5개
+- `과제 7.3`: `src/javaproj7_3`의 파일 2개 + `javaproj7_2`에서 상속된 `Circle.java`, `Rectangle.java`, `Shape.java`
