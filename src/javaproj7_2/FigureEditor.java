@@ -15,16 +15,26 @@ public class FigureEditor {
         numOfCircle = 0;
     }
 
-    public void add(Rectangle r) {
-        if (rectangles.contains(r) == false) {
-            rectangles.add(r);
-            numOfRect++;
-        }
-    }
+    // public void add(Rectangle r) {
+    // if (rectangles.contains(r) == false) {
+    // rectangles.add(r);
+    // numOfRect++;
+    // }
+    // }
 
-    public void add(Circle c) {
-        if (!circles.contains(c)) {
-            circles.add(c);
+    // public void add(Circle c) {
+    // if (!circles.contains(c)) {
+    // circles.add(c);
+    // numOfCircle++;
+    // }
+    // }
+
+    public void add(Object o) {
+        if (o instanceof Rectangle && !rectangles.contains(o)) {
+            rectangles.add((Rectangle) o);
+            numOfRect++;
+        } else if (o instanceof Circle && !circles.contains(o)) {
+            circles.add((Circle) o);
             numOfCircle++;
         }
     }
