@@ -10,5 +10,5 @@
 
 ## 과제 파일 구조 (과제8)
 
--`과제 8.1` : `src/javaproj8_1` 의 `test.java`
--`과제 8.2` : `src/javaproj8_1` 의 `ShapePanelTest.java`
+- `과제 8.1` : `src/javaproj8_1` 의 `test.java`
+- `과제 8.2` : `src/javaproj8_1` 의 `ShapePanelTest.java`
