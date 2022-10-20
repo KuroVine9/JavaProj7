@@ -1,6 +1,6 @@
 package javaproj8_1;
 
-public abstract class Shape {
+public abstract class Shape { // 추상 클래스
     protected int x;
     protected int y;
 
@@ -14,16 +14,7 @@ public abstract class Shape {
         this.y = y;
     }
 
-    // public boolean equals(Object o) {
-    // if (o == this)
-    // return true;
-    // if (!(o instanceof Shape)) {
-    // return false;
-    // }
-    // Shape shape = (Shape) o;
-    // return x == shape.x && y == shape.y;
-    // }
-    public abstract boolean equals(Object o);
+    public abstract boolean equals(Object o); // 추상 메소드 정의
 
     public int getX() {
         return this.x;

@@ -24,7 +24,7 @@ public class Rectangle extends Shape {
         System.out.printf("%s\n", toString());
     }
 
-    public boolean equals(Object o) {
+    public boolean equals(Object o) { // equals 재정의
         if (o == this)
             return true;
         if (!(o instanceof Rectangle)) {
