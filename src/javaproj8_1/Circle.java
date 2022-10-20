@@ -21,16 +21,6 @@ public class Circle extends Shape { // shape클래스를 상속
         System.out.printf("%s\n", toString());
     }
 
-    // public boolean equals(Object o) {
-    // if (o == this)
-    // return true;
-    // if (!(o instanceof Circle)) {
-    // return false;
-    // }
-    // Circle circle = (Circle) o;
-    // return super.equals(circle) && radius == circle.radius;
-    // }
-
     public boolean equals(Object o) {
         if (o == this)
             return true;

@@ -11,14 +11,14 @@ public class ShapePanel {
         numOfShape = 0;
     }
 
-    public void add(Shape s) { // 이미 .equals()에서 형변환을 작성해 구조변경할 필요 없음
+    public void add(Shape s) {
         if (!shapes.contains(s)) {
             shapes.add(s);
             numOfShape++;
         }
     }
 
-    public void delete(Shape s) {
+    public void delete(Shape s) { // ArrayList의 remove 메소드를 활용하면 쉽게 구현 가능하다.
         shapes.remove(s);
         numOfShape--;
     }

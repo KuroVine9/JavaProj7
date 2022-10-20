@@ -24,17 +24,6 @@ public class Rectangle extends Shape {
         System.out.printf("%s\n", toString());
     }
 
-    // public boolean equals(Object o) {
-    // if (o == this)
-    // return true;
-    // if (!(o instanceof Rectangle)) {
-    // return false;
-    // }
-    // Rectangle rectangle = (Rectangle) o;
-    // return super.equals(rectangle) && width == rectangle.width && height ==
-    // rectangle.height;
-    // }
-
     public boolean equals(Object o) {
         if (o == this)
             return true;
