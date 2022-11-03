@@ -1,3 +1,5 @@
+package javaproj10;
+
 import javax.swing.*;
 
 public class PanelC extends JPanel {

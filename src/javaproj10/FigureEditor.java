@@ -1,5 +1,6 @@
-import java.awt.BorderLayout;
+package javaproj10;
 
+import java.awt.BorderLayout;
 import javax.swing.*;
 
 public class FigureEditor extends JFrame {
