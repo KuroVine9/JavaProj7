@@ -3,7 +3,7 @@ package javaproj10;
 import javax.swing.*;
 
 public class PanelC extends JPanel {
-    public PanelC() {
-        add(new PanelB());
+    public PanelC(PanelA pa) {
+        add(new PanelB(pa));
     }
 }

@@ -5,12 +5,14 @@ import javax.swing.*;
 
 public class FigureEditor extends JFrame {
     public FigureEditor() {
+        PanelA pa;
         setTitle("FigureEditor.java");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(800, 600);
 
-        add(new PanelA(), BorderLayout.CENTER);
-        add(new PanelC(), BorderLayout.LINE_START);
+        pa = new PanelA();
+        add(pa, BorderLayout.CENTER);
+        add(new PanelC(pa), BorderLayout.LINE_START);
 
         setVisible(true);
     }
