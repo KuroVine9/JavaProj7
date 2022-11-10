@@ -12,3 +12,7 @@
 
 - `과제 8.1` : `src/javaproj8_1` 의 `test.java` + 필요한 객체 파일
 - `과제 8.2` : `src/javaproj8_1` 의 `ShapePanelTest.java` + 필요한 객체 파일
+
+## 과제 파일 구조 (과제9, 10)
+
+- `과제 9, 10` : `src/javaproj10` 의 파일 4개
