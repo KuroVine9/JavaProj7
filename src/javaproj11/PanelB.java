@@ -41,7 +41,6 @@ public class PanelB extends JPanel {
         @Override
         public void actionPerformed(ActionEvent e) {
             pa.drawMode = drawModeMap.get(e.getActionCommand());
-            System.out.println(pa.drawMode);
         }
 
     }
