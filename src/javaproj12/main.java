@@ -56,7 +56,7 @@ public class main {
     public static ArrayList<Student> loadDataFromFile(String fileName) throws IOException {
         ArrayList<Student> studentList = new ArrayList<>();
         BufferedReader istream = null;
-        istream = new BufferedReader(new FileReader("src/javaproj12/data/output.txt"));
+        istream = new BufferedReader(new FileReader(fileName));
         String line;
         while ((line = istream.readLine()) != null) {
             studentList.add(toStudent(line));
