@@ -10,7 +10,11 @@ public class PanelB extends JPanel {
     JButton line;
     JButton circle;
     PanelA pa;
-    HashMap<String, Byte> drawModeMap;
+    final HashMap<String, Byte> drawModeMap = new HashMap<>() {{
+        put("사각",(byte)0);
+        put("직선",(byte)1);
+        put("타원",(byte)2);
+    }};
 
     public PanelB(PanelA pa) {
         this.pa = pa;
@@ -24,11 +28,6 @@ public class PanelB extends JPanel {
         add(square);
         add(line);
         add(circle);
-
-        drawModeMap = new HashMap<>();
-        drawModeMap.put("사각", (byte) 0);
-        drawModeMap.put("직선", (byte) 1);
-        drawModeMap.put("타원", (byte) 2);
 
         ActionListener listener = new MyActionListener();
         square.addActionListener(listener);
