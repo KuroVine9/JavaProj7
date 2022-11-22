@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class main {
+public class javaproj12 {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         ArrayList<Student> students = new ArrayList<>();
         students.add(new UnderGraduate("100", "Lee", "사물인터넷", 21, "테니스"));
@@ -19,11 +19,12 @@ public class main {
         // System.out.println(loadDataFromFile("src/javaproj12/data/output.txt"));
         ArrayList<Student> output = loadDataFromFile("src/javaproj12/data/output.txt");
         for (var data : output) System.out.println(data);
-
+        output.clear();
+        System.out.println("==========");
         saveObjectToFile(students, "src/javaproj12/data/output.dat");
         // System.out.println(loadObjectFromFile("src/javaproj12/data/output.dat"));
-        ArrayList<Student> output_obj = loadObjectFromFile("src/javaproj12/data/output.dat");
-        for (var data : output_obj) System.out.println(data);
+        output = loadObjectFromFile("src/javaproj12/data/output.dat");
+        for (var data : output) System.out.println(data);
 
     }
 
@@ -48,15 +49,14 @@ public class main {
     public static void saveDataToFile(ArrayList<Student> students, String fileName) throws IOException {
         PrintWriter ostream = new PrintWriter(new FileWriter(fileName));
         for (var data : students) {
-            ostream.println(data.toString());
+            ostream.println(data);
         }
         ostream.close();
     }
 
     public static ArrayList<Student> loadDataFromFile(String fileName) throws IOException {
         ArrayList<Student> studentList = new ArrayList<>();
-        BufferedReader istream = null;
-        istream = new BufferedReader(new FileReader(fileName));
+        BufferedReader istream = new BufferedReader(new FileReader(fileName));
         String line;
         while ((line = istream.readLine()) != null) {
             studentList.add(toStudent(line));
@@ -66,24 +66,22 @@ public class main {
     }
 
     public static void saveObjectToFile(ArrayList<Student> students, String fileName) throws IOException {
-        ObjectOutputStream ostream = null;
-        ostream = new ObjectOutputStream(new FileOutputStream(fileName));
+        ObjectOutputStream ostream = new ObjectOutputStream(new FileOutputStream(fileName));
         for (var data : students) {
             ostream.writeObject(data);
         }
         ostream.writeObject(null);  //EOF 판별용 null obj
-        if (ostream != null) ostream.close();
+        ostream.close();
     }
 
     public static ArrayList<Student> loadObjectFromFile(String fileName) throws IOException, ClassNotFoundException {
         ArrayList<Student> studentList = new ArrayList<>();
-        ObjectInputStream istream = null;
-        istream = new ObjectInputStream(new FileInputStream(fileName));
+        ObjectInputStream istream = new ObjectInputStream(new FileInputStream(fileName));
         Student s;
         while ((s = (Student) istream.readObject()) != null) {
             studentList.add(s);
         }
-        if (istream != null) istream.close();
+        istream.close();
         return studentList;
     }
 }
